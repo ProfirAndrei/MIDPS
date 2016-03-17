@@ -17,5 +17,5 @@
 
 ### **Details:**
 
-* [Codul sursa](https://github.com/ProfirAndrei/MIDPS/tree/master/Lab_1/codul-sursa/)
-* [Raportul](https://github.com/ProfirAndrei/MIDPS/tree/master/Lab_1/raport-lab-1.pdf) - raportul acestei lucrari de laborator
+* [Codul sursa](https://github.com/ProfirAndrei/MIDPS/tree/master/Lab-1/source-code)
+* [Raportul](https://github.com/ProfirAndrei/MIDPS/tree/master/Lab-1/raport-lab-1.pdf) - raportul acestei lucrari de laborator
