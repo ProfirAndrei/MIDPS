@@ -1,0 +1,7 @@
+# Cpp Builder extra Files
+*.~*
+*.ddp
+*.obj
+*.exe
+*.tds
+*.dfm
