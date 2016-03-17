@@ -24,4 +24,4 @@ A fost creat un script cu ajutorul carui se pot compila proiectele din mapa "clo
 
 * [Codul sursa in toate limbajele](https://github.com/ProfirAndrei/MIDPS/tree/master/Lab-2/clone/HelloWorldPrograms) - Hello World in (C/C++/Java/Python/Ruby)
 * [Script](https://github.com/ProfirAndrei/MIDPS/tree/master/Lab-2/script.sh) - scriptul ce compileaza codul sursa din ./clone/
-* [Raport](https://github.com/ProfirAndrei/MIDPS/tree/master/Lab-2/raport-Lab-2.pdf) - raportul acestei lucrari de laborator
+* [Raport](https://github.com/ProfirAndrei/MIDPS/blob/master/Lab-2/raport-lab-2.pdf) - raportul acestei lucrari de laborator
