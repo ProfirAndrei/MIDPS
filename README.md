@@ -12,5 +12,5 @@
  
 ### **Details:**
 
-* [Lab#1](https://github.com/ProfirAndrei/MIDPS/Lab-1)
-* [Lab#2](https://github.com/ProfirAndrei/MIDPS/Lab-2)
+* [Lab#1](https://github.com/ProfirAndrei/MIDPS/tree/master/Lab-1)
+* [Lab#2](https://github.com/ProfirAndrei/MIDPS/tree/master/Lab-2)
