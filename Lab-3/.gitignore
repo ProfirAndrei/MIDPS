@@ -1,0 +1,4 @@
+# Intellij Idea - ignored files
+*.class
+out/
+~*.*

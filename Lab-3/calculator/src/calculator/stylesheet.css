@@ -1,0 +1,68 @@
+.root {
+    -fx-background-color: #1D1D1D;
+}
+
+.textOutContainer {
+    -fx-background-color: #0A640A;
+}
+
+.rectangle {
+    -fx-fill: #2E2E2E;
+}
+
+.textOut {
+    -fx-fill: #FFFFFF;
+    -fx-font-family: "Segoe UI";
+}
+
+.textOutBig {
+    -fx-font-size: 35px;
+}
+
+.textOutSmall {
+    -fx-font-size: 15px;
+    -fx-fill: #B2B2B2;
+}
+
+.button {
+    -fx-focus-traversable: false;
+    -fx-background-color: #3F3F3F;
+    -fx-text-fill: #B2B2B2;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-font-size: 20px;
+    -fx-font-family: "Segoe UI";
+}
+
+.button:hover {
+    -fx-background-color: #585858;
+}
+
+.button:pressed {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: black;
+}
+
+.btnNumber {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 25px;
+}
+
+.btnEqual {
+    -fx-background-color: #458400;
+}
+
+.btnEqual:hover {
+    -fx-background-color: #5D9521;
+}
+
+.btnEqual:pressed {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: black;
+}
+
+.click {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: black;
+}
+
