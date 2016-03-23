@@ -21,5 +21,5 @@ A fost creat un calculator care implementeaza urmatoarele posibilitati:
 
 ### **Details:**
 
-* [Codul](https://github.com/ProfirAndrei/MIDPS/tree/master/Lab-2/clone/HelloWorldPrograms) - Hello World in (C/C++/Java/Python/Ruby)
-* [Raport]() - raportul acestei lucrari de laborator
+* [Codul](https://github.com/ProfirAndrei/MIDPS/tree/master/Lab-3/calculator/src/calculator) - Calculator in Java
+* [Raport](https://github.com/ProfirAndrei/MIDPS/blob/master/Lab-3/profir-lab-3.pdf) - raportul acestei lucrari de laborator
