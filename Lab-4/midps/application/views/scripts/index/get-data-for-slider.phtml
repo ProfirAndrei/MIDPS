@@ -1,0 +1,30 @@
+<div class="container">	
+	<div class="main">
+	<a class = "refresh" href = "#0" onclick = "refresh()"></a>
+		<div id="mi-slider" class="mi-slider">
+			<?php foreach ($this->items as $item):?>
+				<ul>
+					<?php foreach ($item as $element):?>
+						<li><a href = "#0">
+    							<img alt="<?php echo $element['title'];?>" src="<?php echo $element['img_1']; ?>">
+    							<h4><?php echo$element['title']; ?></h4>
+							</a>
+						</li>
+					<?php endforeach;?>
+				</ul>
+			<?php endforeach;?>
+			<nav>
+				<a href="#">Jackets</a>
+				<a href="#">Shirts</a>
+				<a href="#">Dresses</a>
+				<a href="#">Shoes</a>
+			</nav>
+		</div>
+	</div>
+</div><!-- /container -->
+<script src="/js/jquery.catslider.js"></script>
+<script>
+	$(function() {
+		$( '#mi-slider' ).catslider();
+	});
+</script>

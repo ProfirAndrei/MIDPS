@@ -1,0 +1,233 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  color: #2c343b;
+  background-color: #2A2B30;
+}
+
+a {
+  color: #d44457;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* -------------------------------- 
+
+Main Components 
+
+-------------------------------- */
+.cd-header {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #21272c;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media only screen and (min-width: 768px) {
+  .cd-header {
+    height: 70px;
+    background-color: #586775;
+	position: fixed;
+  }
+}
+
+#cd-logo {
+  float: left;
+  margin: 5px 0 0 5%;
+}
+#cd-logo img {
+  display: block;
+  width: 12%;
+}
+@media only screen and (min-width: 768px) {
+  #cd-logo {
+    margin: 5px 0 0 5%;
+  }
+}
+
+.cd-primary-nav {
+  /* mobile first - navigation hidden by default, triggered by tap/click on navigation icon */
+  float: right;
+  margin-right: 5%;
+  width: 44px;
+  height: 100%;
+  background: url("/../resources/img/cd-icon-menu.svg") no-repeat center center;
+}
+.cd-primary-nav ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.cd-primary-nav ul.is-visible {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  -o-transform: translateY(50px);
+  transform: translateY(50px);
+}
+.cd-primary-nav a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 5%;
+  background: #21272c;
+  border-top: 1px solid #333c44;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.cd-primary-nav li:hover {
+	background-color: #1A1E24;
+	color: #FFFFFF;
+}
+
+.cd-primary-nav a:hover {
+	color: #FFFFFF;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-primary-nav {
+    /* reset navigation values */
+    width: auto;
+    height: auto;
+    background: none;
+  }
+  .cd-primary-nav ul {
+    position: static;
+    width: auto;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    line-height: 70px;
+  }
+  .cd-primary-nav ul.is-visible {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  .cd-primary-nav li {
+    display: inline-block;
+    margin-left: 1em;
+  }
+  .cd-primary-nav a {
+    display: inline-block;
+    height: auto;
+    font-weight: 600;
+    line-height: normal;
+    background: transparent;
+    padding: .6em 1em;
+    border-top: none;
+  }
+}
+
+/*footer*/
+
+#block-footer {
+	padding-top: 30px;
+	position: relative;
+	z-index: 100;
+	display: block;
+	text-align: center;
+	height: 70px;
+	background-color: #586775;
+	font-weight: 600;
+	color: #FFFFFF;
+}
+
+/*Scroll To Top*/
+
+.scroll-to-top{
+	z-index: 200;
+	width:100px; 
+	height:100px;
+	padding:10px; 
+	text-align:center; 
+	background: whiteSmoke;
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
+	position:fixed;
+	bottom:100px;
+	right:40px;
+	display:none;
+	background: url("/../resources/img/go-top.svg") no-repeat 0 0;
+    background-size: 100px;
+}
+
+.scroll-to-top-active {
+	background: url("/../resources/img/go-top-activated.svg") no-repeat 0 0;
+	background-size: 100px;
+}
+
+
+/*Contacts-Page*/
+
+.content-contact {
+	display: block;
+	padding: 0px 100px;
+	margin: 70px;
+	margin-top: 160px;
+	color: #FFFFFF;
+	font-weight: bold;
+	min-height: 600px;
+}
+
+/* LIST #5 */
+#list5 { color:#eee; display: inline-block; }
+#list5 ol { font-size:18px; }
+#list5 ol li { }
+#list5 ol li ol { list-style-image: url("/../resources/img/nested.png"); padding:5px 0 
+5px 18px; font-size:15px; }
+#list5 ol li ol li { color:#bfe1f1; height:15px; margin-left:10px; }
+#list5 ol li ol li i { font-style: italic; color: #BF3D27;}
+
+/*MAP IMG*/
+
+.map-img {
+	display: inline-block;
+	margin-left: 50px;
+}
+
+.map-img img{
+	width: 300px;
+}
+
+.block-list5 {
+	display: block;
+	margin: 0 auto;
+	width: 630px;
+	padding-top: 100px;
+}

@@ -1,0 +1,67 @@
+<?php 
+    $this->headTitle('Shop', 'PREPEND');
+    $this->headMeta()->appendName('description', 'This is page with items')
+        ->prependName('viewport', 'width=device-width, initial-scale=1.0')
+        ->prependHttpEquiv('X-UA-Compatible', 'IE=edge');
+    $this->headLink()->appendStylesheet('/css/shop-page.css')
+        ->appendStylesheet('/css/flickity.css')
+        ->appendStylesheet('/css/component.css');
+    $this->headScript()->appendFile('/js/modernizr.custom.js')
+        ->appendFile('/js/isotope.pkgd.min.js');
+?>
+
+	
+	
+	<!-- Bottom bar with filter -->
+<div class="bar">
+	<div class="filter">
+		<span class="filter__label">Filter: </span>
+		<button class="action filter__item filter__item--selected" data-filter="*">All</button>
+		<button class="action filter__item" data-filter=".jackets"><i class="icon icon--jacket"></i><span class="action__text">Jackets</span></button>
+		<button class="action filter__item" data-filter=".shirts"><i class="icon icon--shirt"></i><span class="action__text">Shirts</span></button>
+		<button class="action filter__item" data-filter=".dresses"><i class="icon icon--dress"></i><span class="action__text">Dresses</span></button>
+		<button class="action filter__item" data-filter=".trousers"><i class="icon icon--trousers"></i><span class="action__text">Trousers</span></button>
+		<button class="action filter__item" data-filter=".shoes"><i class="icon icon--shoe"></i><span class="action__text">Shoes</span></button>
+	</div>
+</div>
+	
+<div class="view">
+	<section class="grid grid--loading">
+		<img class="grid__loader" src="/resources/img/grid.svg" width="60" alt="Loader image" />
+		
+		<div class="grid__sizer"></div>
+		<?php $isBig = false;
+		  foreach ($this->products as $product):?>
+			<div class="<?php
+			     if (rand(0, 1) == 0)
+			         echo 'grid__item '.$product['category'];
+			     else if ($isBig == false) {
+			         echo 'grid__item grid__item--size-a '.$product['category'];
+			         $isBig = true;    
+			     }
+			     else {
+			         echo 'grid__item '.$product['category'];
+			         $isBig = false;
+			     }
+			     
+			     ?>">
+				<div class="slider">
+					<div class="slider__item"><img src="<?php echo $product['img_1']; ?>" alt="<?php echo $product['title']; ?>" /></div>
+					<div class="slider__item"><img src="<?php echo $product['img_2']; ?>" alt="<?php echo $product['title']; ?>" /></div>
+					<div class="slider__item"><img src="<?php echo $product['img_3']; ?>" alt="<?php echo $product['title']; ?>" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title"><?php echo $product['title']; ?></h3>
+					<span class="meta__brand"><?php echo $product['brand']; ?></span>
+					<span class="meta__price"><?php echo '$'.$product['price']; ?></span>
+				</div>
+			</div>
+		<?php endforeach;?>
+	</section>
+</div>
+	
+
+<!-- Connect Scripts -->		
+<script src="/js/flickity.pkgd.min.js"></script>
+<script src="/js/item-grid.js"></script>
+

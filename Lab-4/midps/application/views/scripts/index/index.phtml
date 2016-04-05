@@ -1,0 +1,103 @@
+<?php 
+    $this->headTitle('Home', 'PREPEND');
+    $this->headMeta()->appendName('description', 'This is Home Page');
+    $this->headLink()->appendStylesheet('/css/style-index.css')
+        ->appendStylesheet('/css/item-slider.css');
+    $this->headScript()->appendFile('/js/home-slider.js')
+        ->appendFile('/js/jquery.catslider.js');
+?>
+
+<section class="cd-hero">
+		<ul class="cd-hero-slider autoplay">
+			<li class="selected">
+				<div class="cd-half-width cd-img-container">
+					<img src="/resources/img/shop.png" alt="tech 2">
+				</div>
+
+				<div class="cd-half-width">
+					<h2>The Best Shop</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
+				</div>
+			</li>
+
+			<li>
+				<div class="cd-half-width">
+					<h2>Slide title here</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
+				</div>
+
+				<div class="cd-half-width cd-img-container">
+					<img src="/resources/img/shirt.png" alt="tech 1">
+				</div>
+			</li>
+
+			<li>
+				<div class="cd-half-width cd-img-container">
+					<img src="/resources/img/shoes-man.png" alt="tech 2">
+				</div>
+
+				<div class="cd-half-width">
+					<h2>Slide title here</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
+				</div>
+				
+			</li>
+
+			<li>
+				<div class="cd-half-width">
+					<h2>Slide title here</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
+				</div>
+
+				<div class="cd-half-width cd-img-container">
+					<img src="/resources/img/shoes-women.png">
+				</div>
+			</li>
+
+			<li>
+				<div class="cd-half-width cd-img-container">
+					<img src="/resources/img/tie.png">
+				</div>
+
+				<div class="cd-half-width">
+					<h2>Slide title here</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
+				</div>
+				
+			</li>
+		</ul>
+
+		<div class="cd-slider-nav">
+			<nav>
+				<span class="cd-marker item-1"></span>
+				
+				<ul>
+					<li class="selected"><a href="#0">Intro</a></li>
+					<li><a href="#0">Shirt</a></li>
+					<li><a href="#0">Shoes Man</a></li>
+					<li><a href="#0">Shoes Woman</a></li>
+					<li><a href="#0">Tie</a></li>
+				</ul>
+			</nav> 
+		</div> <!-- .cd-slider-nav -->
+	</section>
+<main class="cd-main-content">
+	<script type = "text/javascript">
+    	$(document).ready(refresh());
+    	function refresh() {
+        	var xhr = new XMLHttpRequest();
+        	xhr.open('GET', '/index/get-data-for-slider/', true);
+        	xhr.send();
+    
+        	xhr.onreadystatechange = function() {
+        		if (xhr.readyState != 4) return;
+        		
+            	if (xhr.status != 200) {
+            	  alert( xhr.status + ': ' + xhr.statusText );
+            	} else {
+            	  $('.cd-main-content').html(xhr.responseText);
+            	}
+        	}
+    	}
+	</script>
+</main>
