@@ -14,9 +14,9 @@
 ### **Task-uri realizate:**
 
 A fost creata o aplicatie mobila Pomodoro cu urmatoarele posibilitati:
-*Setarea timpului(lucru, repaus, repaus lung)
-*Setarea ringtonului care se reda dupa fiecare task
-*Afisarea notificarilor dupa finisarea fiecarui task
+ * Setarea timpului(lucru, repaus, repaus lung)
+ * Setarea ringtonului care se reda dupa fiecare task
+ * Afisarea notificarilor dupa finisarea fiecarui task
 
 
 ### **Details:**
