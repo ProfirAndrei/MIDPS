@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/start_pressed_button"
+        android:state_selected="false"
+        android:state_pressed="true" />
+    <item
+        android:drawable="@drawable/stop_pressed_button"
+        android:state_selected="true"
+        android:state_pressed="true"/>
+    <item
+        android:drawable="@drawable/stop_button"
+        android:state_selected="true"
+        />
+    <item android:drawable="@drawable/start_button" />
+</selector>

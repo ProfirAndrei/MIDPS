@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Pomodoro</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="text_state_stopped" />
+    <string name="text_state_work">work</string>
+    <string name="text_state_break">break</string>
+    <string name="text_state_long_break">long break</string>
+    <string name="title_work">Work time</string>
+    <string name="title_break">Break time</string>
+    <string name="title_long_break">Long break time</string>
+    <string name="title_unknown_state">Time</string>
+    <string name="alert_dialog_message">Do you want to continue?</string>
+    <string name="alert_dialog_button_positive">continue</string>
+    <string name="alert_dialog_button_negative">stop</string>
+    <string name="text_notification_work">Stay focused</string>
+    <string name="text_notification_break">Relax</string>
+    <string name="text_notification_long_break">Relax on the full</string>
+    <string name="text_notification_done">Done</string>
+
+
+    <string-array name="Items">
+        <item>Settings</item>
+        <item>Google Maps</item>
+        <item>About</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="about_message">Author: Profir Andrei gr.Ti-143\nVersion: 1.0.0</string>
+    <string name="about_title">Pomodoro About</string>
+
+</resources>

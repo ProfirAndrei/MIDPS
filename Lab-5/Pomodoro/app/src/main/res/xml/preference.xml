@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Timer">
+        <andrei.profir.pomodoro.dialogs.TimerPickerDialog
+            android:key="work"
+            android:title="Work cycle length">
+        </andrei.profir.pomodoro.dialogs.TimerPickerDialog>
+        <andrei.profir.pomodoro.dialogs.TimerPickerDialog
+            android:key="break"
+            android:title="Break length" >
+        </andrei.profir.pomodoro.dialogs.TimerPickerDialog>
+        <andrei.profir.pomodoro.dialogs.TimerPickerDialog
+            android:key="long_break"
+            android:title="Longer break length" >
+        </andrei.profir.pomodoro.dialogs.TimerPickerDialog>
+        <andrei.profir.pomodoro.dialogs.SeekBarDialog
+            android:title="Work sessions before long break"
+            android:key="work_sessions">
+        </andrei.profir.pomodoro.dialogs.SeekBarDialog>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Sound">
+        <andrei.profir.pomodoro.NotificationRingtonePreference
+            android:key="work_notification"
+            android:title="Notification ringtone work time"
+            android:showDefault="true"
+            android:showSilent="true">
+        </andrei.profir.pomodoro.NotificationRingtonePreference>
+        <andrei.profir.pomodoro.NotificationRingtonePreference
+            android:key="break_notification"
+            android:title="Notification ringtone short break"
+            android:showDefault="true"
+            android:showSilent="true">
+        </andrei.profir.pomodoro.NotificationRingtonePreference>
+        <andrei.profir.pomodoro.NotificationRingtonePreference
+            android:key="long_break_notification"
+            android:title="Notification ringtone long break"
+            android:showDefault="true"
+            android:showSilent="true">
+        </andrei.profir.pomodoro.NotificationRingtonePreference>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Other">
+        <CheckBoxPreference
+            android:key="continuous_mode"
+            android:defaultValue="true"
+            android:title="Continuous Mode"
+            android:summary="Automatically to the next sessions">
+        </CheckBoxPreference>
+    </PreferenceCategory>
+</PreferenceScreen>
